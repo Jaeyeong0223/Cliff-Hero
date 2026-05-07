@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E62DF61D-AECA-4171-A289-4D6E0C654724}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\Downloads\낭떠러지의용사_빌드\낭떠러지의용사_빌드\Cliff Hero_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimationCtrl.cs" />
+    <Compile Include="BG.cs" />
+    <Compile Include="CameraMove.cs" />
+    <Compile Include="ChatController.cs" />
+    <Compile Include="DragonController.cs" />
+    <Compile Include="DragonFireBall.cs" />
+    <Compile Include="DropdownManager.cs" />
+    <Compile Include="DropdownSample.cs" />
+    <Compile Include="EffectController.cs" />
+    <Compile Include="EnemyCtrl.cs" />
+    <Compile Include="EnvMapAnimator.cs" />
+    <Compile Include="FireBall.cs" />
+    <Compile Include="FireBreath.cs" />
+    <Compile Include="GameManager.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemAnim.cs" />
+    <Compile Include="LoadingSecneController.cs" />
+    <Compile Include="PickUI.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayerInventory.cs" />
+    <Compile Include="PositionOrder\Axis2D.cs" />
+    <Compile Include="PositionOrder\CubeAnchor.cs" />
+    <Compile Include="PositionOrder\LineAnchor.cs" />
+    <Compile Include="PositionOrder\PositionOrderer.cs" />
+    <Compile Include="PositionOrder\TableAnchor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomSpawn.cs" />
+    <Compile Include="ReandMain.cs" />
+    <Compile Include="ScrollMove.cs" />
+    <Compile Include="SecondGameManager.cs" />
+    <Compile Include="TitleUI.cs" />
+    <Compile Include="TMPro\Examples\Benchmark01.cs" />
+    <Compile Include="TMPro\Examples\Benchmark01_UGUI.cs" />
+    <Compile Include="TMPro\Examples\Benchmark02.cs" />
+    <Compile Include="TMPro\Examples\Benchmark03.cs" />
+    <Compile Include="TMPro\Examples\Benchmark04.cs" />
+    <Compile Include="TMPro\Examples\CameraController.cs" />
+    <Compile Include="TMPro\Examples\ObjectSpin.cs" />
+    <Compile Include="TMPro\Examples\ShaderPropAnimator.cs" />
+    <Compile Include="TMPro\Examples\SimpleScript.cs" />
+    <Compile Include="TMPro\Examples\SkewTextExample.cs" />
+    <Compile Include="TMPro\Examples\TeleType.cs" />
+    <Compile Include="TMPro\Examples\TextConsoleSimulator.cs" />
+    <Compile Include="TMPro\Examples\TextMeshProFloatingText.cs" />
+    <Compile Include="TMPro\Examples\TextMeshSpawner.cs" />
+    <Compile Include="TMPro\Examples\TMPro_InstructionOverlay.cs" />
+    <Compile Include="TMPro\Examples\TMP_ExampleScript_01.cs" />
+    <Compile Include="TMPro\Examples\TMP_FrameRateCounter.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextEventCheck.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextSelector_A.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextSelector_B.cs" />
+    <Compile Include="TMPro\Examples\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="TMPro\Examples\VertexColorCycler.cs" />
+    <Compile Include="TMPro\Examples\VertexJitter.cs" />
+    <Compile Include="TMPro\Examples\VertexShakeA.cs" />
+    <Compile Include="TMPro\Examples\VertexShakeB.cs" />
+    <Compile Include="TMPro\Examples\VertexZoom.cs" />
+    <Compile Include="TMPro\Examples\WarpTextExample.cs" />
+    <Compile Include="TMPro\TMP_DigitValidator.cs" />
+    <Compile Include="TMPro\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="TMPro\TMP_TextEventHandler.cs" />
+    <Compile Include="UIManager.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="WeaponCtrl.cs" />
+    <Compile Include="WeaponEffect.cs" />
+    <Compile Include="WeaponLevelUp.cs" />
+    <Compile Include="WeaponSkill.cs" />
+    <Compile Include="WeaponSuk.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
